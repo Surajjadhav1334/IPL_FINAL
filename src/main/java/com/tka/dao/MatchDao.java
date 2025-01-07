@@ -19,6 +19,7 @@ public class MatchDao {
 	private SessionFactory sessionFactory;
 
 	public Matches save(Matches matches) {
+		
 		Session session = sessionFactory.openSession();
 		session.save(matches);
 		return matches;
